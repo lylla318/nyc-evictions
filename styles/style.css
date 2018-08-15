@@ -1,0 +1,62 @@
+
+@font-face {
+    font-family: MarkPro;
+    src: url("fonts/MarkPro.otf");
+}
+
+@font-face {
+    font-family: MarkPro;
+    src: url("fonts/MarkPro-Bold.otf");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "GT-America";
+    src: url('fonts/GT-America-Mono-Light-v1.otf')
+}
+
+
+
+.d3-tip {
+  line-height: 1.4;
+  padding: 12px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  background: rgba(255,255,255, 0.9);
+  color: #36454f;
+  border-radius: 2px;
+  border: solid 1px #36454f ;
+  font-size:12px;
+  /*font-family:sans-serif;*/
+  font-family: GT-America;
+  font-weight: bold;
+  text-transform: uppercase;
+  max-width:300px !important;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-family: sans-serif;
+  font-size: 5px;
+  max-width:200px !important;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  top: 100%;
+  left: 45%;
+}
+
+.tip-label {
+  font-weight:bold;
+}
+
+path#building {
+  cursor:pointer;
+}

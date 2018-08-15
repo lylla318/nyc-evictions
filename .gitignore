@@ -1,0 +1,6 @@
+# Ignore all data files.
+/data
+# Ignore virtual environment files. 
+/venv
+# Ignore images (for now).
+/images
